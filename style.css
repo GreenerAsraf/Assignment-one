@@ -1,0 +1,274 @@
+body{
+    /* background-color:whitesmoke; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar start */
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px #dedede;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+
+nav.circle ul li a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  nav.circle ul li a:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  nav.circle ul li a:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+  }
+  
+  /* navbar ends here */
+
+
+.heading{
+    color: orange;
+    font-size: 40px;
+}
+.heading-color{
+    color: green;
+    font-size: 40px;
+}
+.flexible-area{
+    display: flex;
+    margin: 10px;
+}
+.half-width{
+    width: 50%;
+  
+}
+
+.second-section{
+ background-image: url(./images/Frame\ 56.jpg) no-repeat  ;
+ border-color: black;
+ background-size: 100%;
+}
+.half-width img{
+  width: 70%;
+  height: 60%;
+}
+.btn{
+    color: rgb(29, 31, 29);
+    background-color: black;
+    height: 50px;
+    width: 350px;
+    justify-content: center;
+     background-color: red; /* For browsers that do not support gradients */
+     background-image: linear-gradient(rgb(0, 204, 255), rgb(75, 75, 19));
+    margin: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+  
+}
+.btn a{
+  text-decoration: none;
+  border-radius: 40px;
+  color: hsl(22, 90%, 33%);
+}
+
+.recipies{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.recipies-text{
+  text-align: center;
+}
+.one-third{
+    display: flex;
+    width: 30%;
+    
+}
+.one-third-width img{
+    width: 300px;
+    height: 280px;
+    margin: 25px ;
+    padding: 2px;
+}
+.one-third-width{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin: 30px;
+}
+h5{
+    text-align: center;
+    font-size: 25px;
+}
+.end-part{
+  background-color: #00bcd4  ;
+    width: 100%;
+    height: 100px;
+    margin-top: 70px;
+    border-radius: 25px;
+    margin: 20px;
+}
+.end-part-text{
+    text-align: center;
+    padding: 10px;
+}
+.end-foody-text{
+  color: #f44336;
+}
+
+
+
+/* Extra features */
+* {
+  box-sizing: border-box;
+}
+
+.review{
+  margin-top: 140px;
+}
+
+.review h3{
+  text-align: center;
+  font-size: 40px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+
+/* social media icon */
+
+
+ul {
+  list-style: none;
+ 
+}
+
+ul li {
+  margin:5px 20px;
+  float:left;
+  background-color: #3d3905;
+}
+
+.wp-icon {
+width: 80px;
+height: 70px;
+border-radius: 50%;
+text-align: center;
+line-height: 150px;
+vertical-align: middle;
+color: #fff;
+margin-right: 5px;
+}
+
+.fa-facebook-f {
+background: #3B5998;
+}
+
+.fa-linkedin {
+background: #0077B5;
+}
+
+.fa-twitter {
+background: #1DA1F2;
+}
+.fa-instagram {
+background: #d6249f;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fa-google-plus {
+background: #D04338;
+}
+.fa-youtube {
+background: #FF0000;
+}
+
+.fa-pinterest {
+background: #BD081C;
+}
